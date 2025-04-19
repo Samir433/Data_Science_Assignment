@@ -1,0 +1,16 @@
+config {
+  type: "table"
+}
+
+select * from unnest([
+  struct(1 as id, 'Samir' as first_name, 'Atpadkar' as last_name, 91 as mark, 'A' as grade),
+  struct(2, 'Dada', 'Atpadkar', 82, 'B'),
+  struct(3, 'Hardik', 'Pandya', 77, 'B'),
+  struct(4, 'Virat', 'Kohli', 65, 'C'),
+  struct(5, 'Rohit', 'Sharma', 55, 'D'),
+  struct(6, 'KL', 'Rahul', 48, 'D'),
+  struct(7, 'Rishabh', 'Pant', 93, 'A'),
+  struct(8, 'Shubman', 'Gill', 85, 'B'),
+  struct(9, 'MS', 'Dhoni', 79, 'B'),
+  struct(10, 'Suryakumar', 'Yadav', 99, 'A')
+])

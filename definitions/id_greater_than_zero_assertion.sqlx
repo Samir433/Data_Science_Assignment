@@ -1,0 +1,8 @@
+config {
+  type: "assertion"
+}
+
+select
+  id
+from ${ref("students_table")}
+where id <= 0

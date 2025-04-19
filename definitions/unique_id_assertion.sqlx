@@ -1,0 +1,9 @@
+config {
+  type: "assertion"
+}
+
+select
+  id
+from ${ref("students_table")}
+group by id
+having count(*) > 1

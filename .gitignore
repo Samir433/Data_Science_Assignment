@@ -1,8 +1,1 @@
-# Ignore CSV data files
-/Transactions.csv
-/Products.csv
-/Lookalike.csv
-/Customers.csv
-/.ipynb_checkpoints/
-# Ignore PDF files
-/Data Science Intern _ Assignment (1).pdf
+node_modules/
