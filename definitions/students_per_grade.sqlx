@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  name: "students_per_grade"
+}
+
+select
+  grade,
+  count(*) as student_count
+from ${ref("students_table")}
+group by grade
+order by grade

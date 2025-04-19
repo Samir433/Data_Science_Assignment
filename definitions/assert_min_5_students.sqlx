@@ -1,0 +1,9 @@
+config {
+  type: "table",
+  name: "top_5_students"
+}
+
+select *
+from ${ref("students_table")}
+order by mark desc
+limit 5
